@@ -8,11 +8,11 @@
 
 ##### 2. Exceptions:
 
-  NoSuchElementException
-  InvalidSelectorException
-  ElementNotVisibleException
-  ElementNotSelectableException
-  TimeoutException
-  SessionNotFoundException
-  StaleElementReferenceException
-  NoSuchAttributeException
+    NoSuchElementException
+    InvalidSelectorException
+    ElementNotVisibleException
+    ElementNotSelectableException
+    TimeoutException
+    SessionNotFoundException
+    StaleElementReferenceException
+    NoSuchAttributeException
