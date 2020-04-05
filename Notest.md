@@ -58,3 +58,26 @@
     
     driver.get_screenshot_as_file('Screenshots/BugsNoKlubURL.png') <- wrzuciłem w blok try except i mam screen 
     
+    driver.switch_to_alert().accept() <- przełączenie sie na okenku alertu o klikniecie na akcept można odzucic alert komend dismiss(), mozemy wpisac tekst jak jest input send_keys()  lub 'text'
+    
+    for handle in driver.window_handles:  <- iteracja po wszytskich otworzonych okanch
+        driver.switch_to_window(handle)   >- przełaczanei sie po wszytskich okanch 
+        
+    set_window_position(0,0)  < - ustawienie pozycji na stronie
+    set_window_rect(x=None, y=None, width=None, height=None) <- ustawieni pozycji i wielkosci okna
+    set_window_size(width, height, windowHandle='current') <- ustawienie wiekosci okna
+    ^^ do tego sa metody get np get_window_position(windowHandle='current') 
+    
+    driver.minimize_window()  <- kliknięcie na "-" schowanie strony
+    driver.fullscreen_window() <- pełny ekran tak jak np na you tube
+    driver.maximize_window()  <- klikniecie w kwadracik - maksymalna wielkosc taba
+    
+    driver.forward()
+    driver.back()
+    driver.refresh()
+    
+    driver.delete_all_cookies()
+    driver.delete_cookie('cookie_name')
+    driver.add_cookie({‘name’ : ‘foo’, ‘value’ : ‘bar’, ‘path’ : ‘/’, ‘secure’:True})
+    driver.get_cookies()
+    driver.get_cookie('cookie_name')
