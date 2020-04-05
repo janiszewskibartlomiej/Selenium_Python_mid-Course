@@ -47,8 +47,7 @@
     element.send_keys('jakiś tekst') <- wpisuje tekst
     element.clear() <-czysci pole
     driver.find_elementS_by.... > zwaraca liste wszystkich elementów np wszystkie buttony ratio
-    driver.find_element_by_xpath("//*[text()='Male']//preceding-sibling::input")  <- znajdzi
- elemnt przed tekstem 'Male'  - ponieważ klikanie na sam tekst nic nam nie da, trzeba znalesc input przed tym tekstem
+    driver.find_element_by_xpath("//*[text()='Male']//preceding-sibling::input")  <- znajdzi elemnt przed tekstem 'Male'  - ponieważ klikanie na sam tekst nic nam nie da, trzeba znalesc input przed tym tekstem
     driver.page_source <- zrodlo strony
     driver.implicitly_wait(30) <- ustawiamy ile mamy czekac maxymalnie na jakikolwiek element na stronie  - unikac poniewaz jest w konflikcie z explicit wait - webdriverWait
     
