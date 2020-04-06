@@ -81,3 +81,19 @@
     driver.add_cookie({‘name’ : ‘foo’, ‘value’ : ‘bar’, ‘path’ : ‘/’, ‘secure’:True})
     driver.get_cookies()
     driver.get_cookie('cookie_name')
+
+##### 9. Event listener:  <- wykonanie metody przed i po danej funkcji
+
+    1. AbstractEventListener <- super class of event
+    
+    class MyListener(AbstractEventListener):
+    def before_navigate_to(self, url, driver):
+        print("Log: Before navigate to {}".format(url))
+    def after_navigate_to(self, url, driver):
+        print("Log: After navigate to {}".format(url))
+        
+    2. EventFirimgWebDriver owapowuje dana instancje webDriver niestatndardowym zachowanie Event sub-class
+    
+    driver = webdriver.Chrome()
+    ef_driver = EventFiringWebDriver(driver, MyListener())
+    ef_driver.get("http://python.org")
