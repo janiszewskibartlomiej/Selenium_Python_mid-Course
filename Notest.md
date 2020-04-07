@@ -2,7 +2,7 @@
 
 `python -m venv env`   trzeba dodać do .gitignore
 
-`.\venv\Scripts\activate`   Actywacja
+`.\env\Scripts\activate`   Actywacja
 
 `deactivate`  usuwanie env
 
