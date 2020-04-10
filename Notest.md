@@ -53,7 +53,8 @@
     driver.implicitly_wait(30) <- ustawiamy ile mamy czekac maxymalnie na jakikolwiek element na stronie  
     - unikac poniewaz jest w konflikcie z explicit wait - webdriverWait
     
-    WebDriverWait(self.driver, time).until(expected_conditions..... cale mnostwo waitow ustawianych indywidualnie np selenium.webdriver.support.expected_conditions.visibility_of_element_located(locator) - An expectation for checking 
+    WebDriverWait(self.driver, time).until(expected_conditions..... cale mnostwo waitow ustawianych indywidualnie np
+    selenium.webdriver.support.expected_conditions.visibility_of_element_located(locator) - An expectation for checking 
     that an element is present on the DOM of a page and visible.
     
     driver.execute_script(‘return document.title;’)  <- mamy mozliwosc wykonywania codu JS co jest super 
@@ -93,7 +94,8 @@
     self.driver = webdriver.Chrome(options=chrome_options)
     
     element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.ID, "documentation")))
-    ActionChains(self.driver).move_to_element(element).perform()  <- 'ActionChains' nasladuje ruch myszki i przesuwa sie na 'element' aby byl wywolany np hover. 'perform()' powoduje wywolanie wszystkich czynnosci w zadeklarowanej kolejnosci jedn po drugiej
+    ActionChains(self.driver).move_to_element(element).perform()  <- 'ActionChains' nasladuje ruch myszki i przesuwa sie na 'element'
+    aby byl wywolany np hover. 'perform()' powoduje wywolanie wszystkich czynnosci w zadeklarowanej kolejnosci jedn po drugiej
     locator = "#documentation > ul > li.tier-2.super-navigation > p.download-buttons > a:nth-child(1)"
     py3docbutton = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, locator)))
     <- czekamy az element sie pojawi max 10sek
