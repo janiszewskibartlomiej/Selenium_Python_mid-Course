@@ -118,3 +118,20 @@
     driver = webdriver.Chrome()
     ef_driver = EventFiringWebDriver(driver, MyListener())
     ef_driver.get("http://python.org")
+    
+##### 10. Page Object Model:
+
+    1. class BasePage:  with __init__ driver + build metod
+    2. np class HomePage(BasePage):
+    3. Test with setup class and next test class - those class are inherit from setup class
+    
+    Moj pomysł na  arhitekture:
+    
+        - drivers
+        - reports
+            -screenshots
+        -resourses
+            - page_object
+            - testdata.py
+            - locators.py
+        - tests
