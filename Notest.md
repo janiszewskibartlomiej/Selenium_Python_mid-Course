@@ -129,9 +129,18 @@ Moj pomysł na  arhitekture:
 
 - drivers
 - reports
-    -screenshots
--resourses
+    - screenshots
+- resourses
     - page_object
     - testdata.py
     - locators.py
 - tests
+
+##### 11. Wzorce projektowe:
+
+    SOLID
+    KISS
+    DRY
+    YAGNI
+    generalnie jedna linijka kodu robi tylko jedą żecz. unikamy dublikowania kodu i powielania go, nie importujemy czego 
+    do puki tego nie potrzebujey
