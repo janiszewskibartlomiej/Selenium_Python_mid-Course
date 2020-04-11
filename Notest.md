@@ -125,7 +125,7 @@
     2. np class HomePage(BasePage):
     3. Test with setup class and next test class - those class are inherit from setup class
     
-    Moj pomysł na  arhitekture:
+Moj pomysł na  arhitekture:
 
 - drivers
 - reports
