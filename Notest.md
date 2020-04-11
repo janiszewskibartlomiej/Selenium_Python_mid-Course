@@ -126,12 +126,12 @@
     3. Test with setup class and next test class - those class are inherit from setup class
     
     Moj pomysł na  arhitekture:
-    
-        - drivers
-        - reports
-            -screenshots
-        -resourses
-            - page_object
-            - testdata.py
-            - locators.py
-        - tests
+
+- drivers
+- reports
+    -screenshots
+-resourses
+    - page_object
+    - testdata.py
+    - locators.py
+- tests
