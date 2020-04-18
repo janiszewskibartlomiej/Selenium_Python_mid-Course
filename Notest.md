@@ -144,3 +144,20 @@ Moj pomysł na  arhitekture:
     YAGNI
     generalnie jedna linijka kodu robi tylko jedą żecz. unikamy dublikowania kodu i powielania go, nie importujemy czego 
     do puki tego nie potrzebujey
+    
+##### 12. ustawiamy setup jako classa > setUpClass(cls):
+    
+    @classmethod
+    def setUpClass(cls) -> None:
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument('--ignore-certificate-errors')
+        cls.driver = webdriver.Chrome(Dev.CHROME_PATH, options=chrome_options)
+        cls.driver.maximize_window()
+    
+    dzieki temu nie musimy ustawić dziczenie jako super().setUp() oraz testy bedą szybsze
+    
+ ##### 13. pomijanie testów dekoratorem skip:
+ 
+     @unittest.skip('I must search solution this test case')
+     
+     
