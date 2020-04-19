@@ -153,6 +153,10 @@ Moj pomysł na  arhitekture:
         chrome_options.add_argument('--ignore-certificate-errors')
         cls.driver = webdriver.Chrome(Dev.CHROME_PATH, options=chrome_options)
         cls.driver.maximize_window()
+        
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.close()    <-- warto ustawić poniewaz jak sie wysypie test to okno zostanie zamkniete
     
     dzieki temu nie musimy ustawić dziczenie jako super().setUp() oraz testy bedą szybsze
     
@@ -160,4 +164,4 @@ Moj pomysł na  arhitekture:
  
      @unittest.skip('I must search solution this test case')
      
-     
+##### 14. 
