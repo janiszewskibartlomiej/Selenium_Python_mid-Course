@@ -128,13 +128,16 @@
 Moj pomysł na  arhitekture:
 
 - drivers
+    - *.exe
 - reports
     - screenshots
 - resourses
     - page_object
+        - *.py
     - testdata.py
     - locators.py
 - tests
+    - *.py
 
 ##### 11. Wzorce projektowe:
 
