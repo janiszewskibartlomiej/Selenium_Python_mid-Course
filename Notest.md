@@ -129,8 +129,6 @@ Moj pomysł na  arhitekture:
 
 - drivers
     - *.exe
-- reports
-    - screenshots
 - resourses
     - page_object
         - *.py
@@ -138,7 +136,9 @@ Moj pomysł na  arhitekture:
     - locators.py
 - tests
     - *.py
-
+    - reports
+        - screenshots
+        
 ##### 11. Wzorce projektowe:
 
     SOLID
