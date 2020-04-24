@@ -135,9 +135,9 @@ Moj pomysł na  arhitekture:
     - testdata.py
     - locators.py
 - tests
-    - *.py
     - reports
         - screenshots
+     - *.py
         
 ##### 11. Wzorce projektowe:
 
