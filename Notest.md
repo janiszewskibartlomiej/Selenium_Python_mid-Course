@@ -139,7 +139,7 @@ Moj pomysł na  arhitekture:
         - screenshots
      - suiteAllTests.py
      - *.py
-        ...
+     -  ...
      - *.py
      
         
