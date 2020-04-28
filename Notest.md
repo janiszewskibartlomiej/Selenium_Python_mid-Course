@@ -132,6 +132,10 @@ Moj pomysł na  arhitekture:
 - resourses
     - page_object
         - *.py
+        -  .
+        -  .
+        -  .
+        - *.py
     - testdata.py
     - locators.py
 - tests
@@ -139,7 +143,9 @@ Moj pomysł na  arhitekture:
         - screenshots
      - suiteAllTests.py
      - *.py
-     -  ...
+     -  .
+     -  .
+     -  .
      - *.py
      
         
