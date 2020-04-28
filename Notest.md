@@ -132,7 +132,7 @@ Moj pomysł na  arhitekture:
 - reports
    - currentData e.g.[20200427]
        - nameRaport+curentDatetime.html e.g.[name_2020-04-28_13-37-59.html]
-   - screenshots
+       - screenshots
 - resourses
     - page_object
         - *.py
