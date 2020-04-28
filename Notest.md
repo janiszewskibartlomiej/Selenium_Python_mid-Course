@@ -140,7 +140,7 @@ Moj pomysł na  arhitekture:
     - reports
         - screenshots
      - suiteAllTests.py
-     - test***.py
+     - test*.py
      -  ...
      - test*.py
      
