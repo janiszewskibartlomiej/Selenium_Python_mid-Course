@@ -129,6 +129,10 @@ Moj pomysł na  arhitekture:
 
 - drivers
     - *.exe
+- reports
+   - currentData
+       - nameRaport+curentDatetime.html
+   - screenshots
 - resourses
     - page_object
         - *.py
@@ -137,8 +141,6 @@ Moj pomysł na  arhitekture:
     - testdata.py
     - locators.py
 - tests
-    - reports
-        - screenshots
      - suiteAllTests.py
      - test*.py
      -  ...
