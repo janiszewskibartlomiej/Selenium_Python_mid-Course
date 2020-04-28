@@ -137,7 +137,11 @@ Moj pomysł na  arhitekture:
 - tests
     - reports
         - screenshots
+     - suiteAllTests.py
      - *.py
+        ...
+     - *.py
+     
         
 ##### 11. Wzorce projektowe:
 
