@@ -171,7 +171,8 @@ Moj pomysł na  arhitekture:
     
     dzieki temu nie musimy ustawić dziczenie jako super().setUp() oraz testy bedą szybsze
     
-    > niestyty u mnie dziala to ze zwgledu na to ze przy blednym pierszym tescie drugi jest odpalany z base url na nie z instancji klasy
+    > niestety u mnie nie dziala to ze zwgledu na to ze przy blednym pierszym tescie drugi jest odpalany z tej samej sesji a nie nowej co powoduje błedy
+    
  ##### 13. pomijanie testów dekoratorem skip:
  
      @unittest.skip('I must search solution this test case')
