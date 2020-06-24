@@ -191,3 +191,18 @@ def suite():
     suite.addTest(TestAbout('test_TC005_assert_url'))
     return suite
 ```
+
+##### 15. Concurrency test - odpalanie testów równocześnie:
+
+https://github.com/cgoldberg/concurrencytest
+
+```yaml
+pip install concurrencytest
+
+from concurrencytest import ConcurrentTestSuite, fork_for_tests
+
+ runner = unittest.TextTestRunner(verbosity=2)
+suite = suite()
+concurrent_suite = ConcurrentTestSuite(suite, fork_for_tests(2))
+runner.run(concurrent_suite)
+```    
