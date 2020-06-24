@@ -89,8 +89,8 @@
     driver.get_cookie('cookie_name')
     
     chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument('headless')  <- no popup display - wszytsko laduje sie jedynei do pamieci
-    chrome_options.add_argument('window-size=1920x1080')
+    chrome_options.add_argument('--headless')  <- no popup display - wszytsko laduje sie jedynie do pamieci, przegladarka nie odpala się w trybie view
+    chrome_options.add_argument('--window-size=1920x1080')
     self.driver = webdriver.Chrome(options=chrome_options)
     
     element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.ID, "documentation")))
