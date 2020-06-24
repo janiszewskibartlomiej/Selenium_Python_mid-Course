@@ -210,3 +210,8 @@ runner.run(concurrent_suite)
 
 * Running tests remotely, not locally
 * Running tests on different machines against different browsers in parallel
+
+pobrac grid selenium-server https://www.selenium.dev/downloads/
+
+odpalić server ```java -jar selenium-server-standalone-3.141.59.jar -role hub -port 4445```   - wpisujemy nr wersji.
+
