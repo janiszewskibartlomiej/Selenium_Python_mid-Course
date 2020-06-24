@@ -206,3 +206,7 @@ suite = suite()
 concurrent_suite = ConcurrentTestSuite(suite, fork_for_tests(2))
 runner.run(concurrent_suite)
 ```    
+##### Selenium Grid:
+
+* Running tests remotely, not locally
+* Running tests on different machines against different browsers in parallel
