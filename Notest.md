@@ -192,7 +192,7 @@ def suite():
     return suite
 ```
 
-##### 15. Concurrency test - odpalanie testów równocześnie:
+##### 15. Concurrency test - odpalanie testów równocześnie: niedziała na windows :(
 
 https://github.com/cgoldberg/concurrencytest
 
