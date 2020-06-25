@@ -1,3 +1,4 @@
+```python
 ##### 1. tworzenie wirtualnego srodowiska
 
 `python -m venv env`   trzeba dodać do .gitignore
@@ -41,7 +42,7 @@
     XPATH : //img[not(@class='frame')]  - pierwszy element po img z pominiecie lasy frame
     
 ##### 8. Commands:
-```python
+
     element.get_attribute('checked') <- sprawdzenie czy checkbox jest zaznaczony - zwraca 'true'
     element.is_enabled() <- sprawdza czy butto jest możliwy do klikniecia zwrac 'true' lub 'false'
     element.send_keys('jakiś tekst') <- wpisuje tekst
@@ -102,7 +103,7 @@
     
     assert 'No results found.' in result_elem.get_attribute('innerHTML')  <- czy tekst zawiera sie w innerHTML
     assert py3docbutton.text == 'Python 3.x Docs'  <- jest to skrutowy zapis i nie trzeba stosowac selt.assertEqual()
-    ```
+   
 
 ##### 9. Event listener:  <- wykonanie metody przed i po danej funkcji
 
@@ -158,7 +159,7 @@ Moj pomysł na  arhitekture:
     do puki tego nie potrzebujey
     
 ##### 12. ustawiamy setup jako classa > setUpClass(cls):
-```python    
+  
     @classmethod
     def setUpClass(cls) -> None:
         chrome_options = webdriver.ChromeOptions()
@@ -173,14 +174,14 @@ Moj pomysł na  arhitekture:
     dzieki temu nie musimy ustawić dziczenie jako super().setUp() oraz testy bedą szybsze
     
     > niestety u mnie nie dziala to ze zwgledu na to ze przy blednym pierszym tescie drugi jest odpalany z tej samej sesji a nie nowej co powoduje błedy
-    ```
+    
  ##### 13. pomijanie testów dekoratorem skip:
  
      @unittest.skip('I must search solution this test case')
      
 ##### 14. Suite
 
-```yaml
+
 def suite():
     suite = unittest.TestSuite()
     # Home page tests
@@ -191,13 +192,13 @@ def suite():
     suite.addTest(TestAbout('test_TC003_verify_upcoming_events_section_present'))
     suite.addTest(TestAbout('test_TC005_assert_url'))
     return suite
-```
+
 
 ##### 15. Concurrency test - odpalanie testów równocześnie: niedziała na windows :(
 
 https://github.com/cgoldberg/concurrencytest
 
-```yaml
+
 pip install concurrencytest
 
 from concurrencytest import ConcurrentTestSuite, fork_for_tests
@@ -206,7 +207,7 @@ from concurrencytest import ConcurrentTestSuite, fork_for_tests
 suite = suite()
 concurrent_suite = ConcurrentTestSuite(suite, fork_for_tests(2))
 runner.run(concurrent_suite)
-```    
+  
 ##### 16. Selenium Grid:
 
 * Running tests remotely, not locally
@@ -226,16 +227,16 @@ odpalanie driver zdalnego > ```driver = webdriver.Remote(command_executor='http:
 
 ##### 17. headless for grid 
 
-```python
+
 options = webdriver.ChromeOptions()
 options.set_headless()
 driver = webdriver.Remote(command_executor = 'http://192.168.8.103:5000/wd/hub', 
                         desired_capabilities = options.to_capabilities())
-```
 
-```python
+
+
 options = webdriver.FirefoxOptions()
 optionss.set_headless()
 driver = webdriver.Remote(command_executor = 'http://192.168.8.103:5000/wd/hub', 
                         desired_capabilities = optionss.to_capabilities())
-```
+
