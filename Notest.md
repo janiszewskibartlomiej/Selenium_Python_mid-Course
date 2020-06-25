@@ -41,7 +41,7 @@
     XPATH : //img[not(@class='frame')]  - pierwszy element po img z pominiecie lasy frame
     
 ##### 8. Commands:
-
+```python
     element.get_attribute('checked') <- sprawdzenie czy checkbox jest zaznaczony - zwraca 'true'
     element.is_enabled() <- sprawdza czy butto jest możliwy do klikniecia zwrac 'true' lub 'false'
     element.send_keys('jakiś tekst') <- wpisuje tekst
@@ -102,6 +102,7 @@
     
     assert 'No results found.' in result_elem.get_attribute('innerHTML')  <- czy tekst zawiera sie w innerHTML
     assert py3docbutton.text == 'Python 3.x Docs'  <- jest to skrutowy zapis i nie trzeba stosowac selt.assertEqual()
+    ```
 
 ##### 9. Event listener:  <- wykonanie metody przed i po danej funkcji
 
@@ -157,7 +158,7 @@ Moj pomysł na  arhitekture:
     do puki tego nie potrzebujey
     
 ##### 12. ustawiamy setup jako classa > setUpClass(cls):
-    
+```python    
     @classmethod
     def setUpClass(cls) -> None:
         chrome_options = webdriver.ChromeOptions()
@@ -172,7 +173,7 @@ Moj pomysł na  arhitekture:
     dzieki temu nie musimy ustawić dziczenie jako super().setUp() oraz testy bedą szybsze
     
     > niestety u mnie nie dziala to ze zwgledu na to ze przy blednym pierszym tescie drugi jest odpalany z tej samej sesji a nie nowej co powoduje błedy
-    
+    ```
  ##### 13. pomijanie testów dekoratorem skip:
  
      @unittest.skip('I must search solution this test case')
