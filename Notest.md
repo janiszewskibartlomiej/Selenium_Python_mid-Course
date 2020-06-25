@@ -206,7 +206,7 @@ suite = suite()
 concurrent_suite = ConcurrentTestSuite(suite, fork_for_tests(2))
 runner.run(concurrent_suite)
 ```    
-##### Selenium Grid:
+##### 16. Selenium Grid:
 
 * Running tests remotely, not locally
 * Running tests on different machines against different browsers in parallel
@@ -223,18 +223,18 @@ dodanie testów do naszego serwera w nowym oknie terminala: ``` java -jar seleni
 
 odpalanie driver zdalnego > ```driver = webdriver.Remote(command_executor='http://192.168.8.103:5000/wd/hub', desired_capabilities={'browserName': 'chrome'})```
 
-##### headless for grid 
+##### 17. headless for grid 
 
 ```python
-opts = webdriver.ChromeOptions()
-opts.set_headless()
+options = webdriver.ChromeOptions()
+options.set_headless()
 driver = webdriver.Remote(command_executor = 'http://192.168.8.103:5000/wd/hub', 
-                        desired_capabilities = opts.to_capabilities())
+                        desired_capabilities = options.to_capabilities())
 ```
 
 ```python
-opts = webdriver.FirefoxOptions()
-opts.set_headless()
+options = webdriver.FirefoxOptions()
+optionss.set_headless()
 driver = webdriver.Remote(command_executor = 'http://192.168.8.103:5000/wd/hub', 
-                        desired_capabilities = opts.to_capabilities())
+                        desired_capabilities = optionss.to_capabilities())
 ```
