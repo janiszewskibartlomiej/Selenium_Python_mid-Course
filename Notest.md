@@ -213,5 +213,28 @@ runner.run(concurrent_suite)
 
 pobrac grid selenium-server https://www.selenium.dev/downloads/
 
-odpalić server ```java -jar selenium-server-standalone-3.141.59.jar -role hub -port 4445```   - wpisujemy nr wersji.
+odpalić server ```java -jar selenium-server-standalone-3.141.59.jar -role hub -port 5000```   - wpisujemy nr wersji.
 
+konfiguracja dodatkowa huba poprzez: ```java -jar selenium-server-standalone-3.141.59.jar -role hub -cleanUpCycle 5000 -timeout 30```
+
+dodanie testów do naszego serwera w nowym oknie terminala: ``` java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.8.103:5000/grid/register/ -timeout 30 -maxSession 5```
+
+* raczej można dodać nowe instancje do grid poprez wirtualną maszę
+
+odpalanie driver zdalnego > ```driver = webdriver.Remote(command_executor='http://192.168.8.103:5000/wd/hub', desired_capabilities={'browserName': 'chrome'})```
+
+##### headless for grid 
+
+```python
+opts = webdriver.ChromeOptions()
+opts.set_headless()
+driver = webdriver.Remote(command_executor = 'http://192.168.8.103:5000/wd/hub', 
+                        desired_capabilities = opts.to_capabilities())
+```
+
+```python
+opts = webdriver.FirefoxOptions()
+opts.set_headless()
+driver = webdriver.Remote(command_executor = 'http://192.168.8.103:5000/wd/hub', 
+                        desired_capabilities = opts.to_capabilities())
+```
