@@ -236,7 +236,13 @@ driver = webdriver.Remote(command_executor = 'http://192.168.8.103:5000/wd/hub',
 
 
 options = webdriver.FirefoxOptions()
-optionss.set_headless()
+options.set_headless()
 driver = webdriver.Remote(command_executor = 'http://192.168.8.103:5000/wd/hub', 
                         desired_capabilities = optionss.to_capabilities())
+
+##### 18. grid + Docker section 6.30 
+
+> bardzo ważne ponieważ mozemy uruchomic testy w srodowisku z konkrtena przegladarka i jej wersja poprzez obraz systemu 
+
+
 
