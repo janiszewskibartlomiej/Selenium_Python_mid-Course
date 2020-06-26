@@ -225,7 +225,7 @@ dodanie testów do naszego serwera w nowym oknie terminala: ``` java -jar seleni
 
 odpalanie driver zdalnego > ```driver = webdriver.Remote(command_executor='http://192.168.8.103:5000/wd/hub', desired_capabilities={'browserName': 'chrome'})```
 
-##### 17. headless for grid 
+##### 17. headless for grid - odpalanei w tle bez open browser - jedynie nagłówki są pobierane. Są szybsze i mniej pamięci zjadają
 
 
 options = webdriver.ChromeOptions()
@@ -244,5 +244,9 @@ driver = webdriver.Remote(command_executor = 'http://192.168.8.103:5000/wd/hub',
 
 > bardzo ważne ponieważ mozemy uruchomic testy w srodowisku z konkrtena przegladarka i jej wersja poprzez obraz systemu 
 
+##### 19. testy na FF i Chrome:
 
+* proponowano duplikowanie plików z testami pod konkretną przeglądarką i zmianę jedynie drivera
+* wykonano osobne suite dla ff i chrome
+* nastepnie zrobiono allSuite in one > zastosowwano importy dwuch suite i dodano do Suite() dwa zestawy 
 
