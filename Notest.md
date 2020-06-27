@@ -251,6 +251,7 @@ driver = webdriver.Remote(command_executor = 'http://192.168.8.103:5000/wd/hub',
 * nastepnie zrobiono allSuite in one > zastosowwano importy dwuch suite i dodano do Suite() dwa zestawy 
 
 ##### 20. możemy budować suite z innych suite
+
 import unittest
 import suite_all_tests_chrome
 import suite_all_tests_firefox
