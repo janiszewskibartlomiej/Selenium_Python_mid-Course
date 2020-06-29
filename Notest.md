@@ -264,3 +264,31 @@ suite_firefox= suite_all_tests_firefox.suite()
 suite.addTests(suite_chrome)
 suite.addTests(suite_firefox)
 runner.run(suite)
+
+##### 21. class unittest.TestResult  to obiekt który ma bardzo dużo metod
+
+np możemy z konsoli odpalic result lub u mnie runner.testsRun i dostaniemy liczbe testów
+
+- result.testsRun
+- result.failures
+- result.errors
+- result.skipped
+
+##### 22. pytest -v nazwa_pliku.py
+
+`pip install pytest`
+
+większe możliwości niż unittest - wizuanei nawet w konsoli wyniki sa % i kolorowe.
+
+##### 23. pytest-json  do generowania raportu w formacie json
+
+json output example with pytest 
+
+`pip install pytest-json`
+`pytest -v nazwa_pliku.py --json=report.json`
+
+##### 24. pytest-html
+
+`pip install pytest-html`
+
+`pytest -v result.py --html=pytest_report.html --self-contained-html`
