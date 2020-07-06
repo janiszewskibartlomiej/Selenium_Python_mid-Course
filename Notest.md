@@ -274,21 +274,25 @@ np możemy z konsoli odpalic result lub u mnie runner.testsRun i dostaniemy licz
 - result.errors
 - result.skipped
 
-##### 22. pytest -v nazwa_pliku.py
+##### 22. pytest -v nazwa_pliku.py  - pytest szuka po nazwie tests_... [trzeba pamietac o prawidłowcych nazwach]
 
 `pip install pytest`
 
 większe możliwości niż unittest - wizuanei nawet w konsoli wyniki sa % i kolorowe.
+
+odpalenie za pomocą `pytest -v`   - znajdzie wszytskie pliki z początkiem test_ i je odpali
 
 ##### 23. pytest-json  do generowania raportu w formacie json
 
 json output example with pytest 
 
 `pip install pytest-json`
-`pytest -v nazwa_pliku.py --json=report.json`
+`pytest -v nazwa_pliku.py --json=report.json`    >> nazwa pliku to może  byc tylko test a nie kolecja suit
 
-##### 24. pytest-html
+najepiej wszytskie odpalić za pomocą `pytest -v`
+
+##### 24. pytest-html  
 
 `pip install pytest-html`
 
-`pytest -v result.py --html=pytest_report.html --self-contained-html`
+`pytest -v result.py --html=pytest_report.html --self-contained-html`  >> nazwa pliku to może  byc tylko test a nie kolecja suit
