@@ -147,10 +147,10 @@ Moj pomysł na  arhitekture:
      - test*.py
      -  ...
      - test*.py
- conftest.py
- pytest.ini
- requirements.txt
- runAllTest.py
+ - conftest.py
+ - pytest.ini
+ - requirements.txt
+ - runAllTest.py
      
 ```python      
 ##### 11. Wzorce projektowe:
