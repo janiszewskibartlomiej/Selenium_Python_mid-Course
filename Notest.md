@@ -147,6 +147,10 @@ Moj pomysł na  arhitekture:
      - test*.py
      -  ...
      - test*.py
+ conftest.py
+ pytest.ini
+ requirements.txt
+ runAllTest.py
      
         
 ##### 11. Wzorce projektowe:
