@@ -126,7 +126,7 @@
     1. class BasePage:  with __init__ driver + build metod
     2. np class HomePage(BasePage):
     3. Test with setup class and next test class - those class are inherit from setup class
-    
+```
 Moj pomysł na  arhitekture:
 
 - drivers
@@ -152,7 +152,7 @@ Moj pomysł na  arhitekture:
  requirements.txt
  runAllTest.py
      
-        
+```python      
 ##### 11. Wzorce projektowe:
 
     SOLID
