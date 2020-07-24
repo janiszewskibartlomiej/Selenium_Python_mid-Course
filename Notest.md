@@ -134,14 +134,15 @@ Moj pomysł na  arhitekture:
 - reports
    - currentData e.g.[20200427]
        - nameRaport+curentDatetime.html e.g.[name_2020-04-28_13-37-59.html]
-       - screenshots
+       - screenshots_+_name_of_method_+_name_of_browser+current_data.png
 - resourses
     - page_object
         - *.py
         -  ...
         - *.py
-    - testdata.py
+    - config.cfg
     - locators.py
+    - automation_methods.py >> global methods we can use in every project
 - tests
      - suiteAllTests.py
      - test*.py
