@@ -43,7 +43,7 @@
     
 ##### 8. Commands:
 
-    element.get_attribute('checked') <- sprawdzenie czy checkbox jest zaznaczony - zwraca 'true'
+    element.get_attribute('checked') <- generalnei pobiera zawartosc danego atrybutu, w tym wypadku sprawdzenie czy checkbox jest zaznaczony - zwraca 'true'
     element.is_enabled() <- sprawdza czy butto jest możliwy do klikniecia zwrac 'true' lub 'false'
     element.send_keys('jakiś tekst') <- wpisuje tekst
     element.clear() <-czysci pole
