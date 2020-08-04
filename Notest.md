@@ -136,9 +136,10 @@ Moj pomysł na  arhitekture:
        - nameRaport+curentDatetime.html e.g.[name_2020-04-28_13-37-59.html]
        - screenshots_+_name_of_method_+_name_of_browser+current_data.png
 - resourses
+    - files
     - page_object
         - *.py
-        -  ...
+        -  base_page.py  >> flex methods on browsers
         - *.py
     - config.cfg
     - locators.py
