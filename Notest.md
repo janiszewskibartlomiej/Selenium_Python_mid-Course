@@ -280,7 +280,7 @@ np możemy z konsoli odpalic result lub u mnie runner.testsRun i dostaniemy licz
 - result.errors
 - result.skipped
 
-##### 22. pytest -v nazwa_pliku.py  - pytest szuka po nazwie tests_... [trzeba pamietac o prawidłowcych nazwach]
+##### 22. pytest -v nazwa_pliku.py  - pytest szuka po nazwie test_... [trzeba pamietac o prawidłowcych nazwach]
 
 `pip install pytest`
 
@@ -302,3 +302,11 @@ najepiej wszytskie odpalić za pomocą `pytest -v`
 `pip install pytest-html`
 
 `pytest -v result.py --html=pytest_report.html --self-contained-html`  >> nazwa pliku to może  byc tylko test a nie kolecja suit
+
+##### 25. Run Selenium Tests In Parallel
+
+pip install pytest-xdist
+
+run >> pytest -v -n=2   >> n=<num-of-cpus>
+
+info z https://www.lambdatest.com/blog/pytest-tutorial-parallel-testing-with-selenium-grid/
